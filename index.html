@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="import" href="./cart.htmls"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+
+<header>
+    <div><h1  class="left-head">SHOP</h1></div>
+
+    <div>
+        <a href="./cart.html"><h1 class="right-head">Cart<i class="fa fa-shopping-cart" aria-hidden="true">  </i>        <span class="cart-count " id="spanCount" >0</span>
+        </a>
+        </h1>
+    </div>
+</header>
+
+
+<section class="flex">
+
+    <div class="mid-left">
+
+    <div>
+        <h2 class="rang">Color</h2>
+        <ul  class="ul">
+            <li><p class="red ">Red <span> <input type="checkbox" onclick="red()" name="Color" id="red"> </span> </p></li>
+            <li><p class="yellow ">Yellow <span> <input type="checkbox" onclick="yellow()" name="Color" id="yellow"> </span> </p></li>
+            <li><p class="blue ">Blue <span> <input type="checkbox" onclick="blue()" name="Color" id="blue"> </span> </p></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="ul ul2">
+            <h1>Size</h1>
+            <li><button onclick="small()">Small</button></li>
+            <li><button onclick="medium()">Medium</button></li>
+            <li><button onclick="large()">Large</button></li>
+            <li><button onclick="Elarge()">Extra Large</button></li>
+            <li><button onclick="EElarge()">2 Extra Large</button></li>
+        </ul>
+    </div>
+
+
+    <div>
+        <h2 class="h13">Price</h2>
+        <ul class="ul3">
+            <li>Low to High <input type="checkbox" name="low" class="low" id=""> </li>
+            <li>High to Low <input type="checkbox" name="high" class="high" id=""> </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="item-flex" id="apen">
+
+    
+  
+    <div class="card" id="cart1">
+        <img src="./asset/t1.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Green</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart1')" value="cart1" >Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart2">
+        <img src="./asset/t2.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: yellow</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter() ; addToCart('cart2')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart3">
+        <img src="./asset/t3.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Blue</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter() ; addToCart('cart3')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart4">
+        <img src="./asset/t4.jpg" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Black</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart4')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart5">
+        <img src="./asset/t5.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Red</h3>
+            <h3>Price: <span class="price">700<span></h3>
+            <h3 class="size">Size: Medium</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart5')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart6">
+        <img src="./asset/t6.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Red</h3>
+            <h3>Price: <span class="price">800<span></h3>
+            <h3 class="size">Size: Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart6')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart7">
+        <img src="./asset/t7.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Green</h3>
+            <h3>Price: <span class="price">800<span></h3>
+            <h3 class="size">Size: Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart7')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart8">
+        <img src="./asset/t8.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Red/Blue</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Ex Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart8')">Add to Cart</button>
+
+    </div>
+
+    
+    <div class="card" id="cart9">
+        <img src="./asset/t2.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Yellow</h3>
+            <h3>Price: <span class="price">900<span></h3>
+            <h3 class="size">Size: 2Ex Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart9')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart10">
+        <img src="./asset/t3.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Blue</h3>
+            <h3>Price: <span class="price">800<span></h3>
+            <h3 class="size">Size: Medium</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart10')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart11">
+        <img src="./asset/t4.jpg" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Black</h3>
+            <h3>Price: <span class="price">900<span></h3>
+            <h3 class="size">Size: Medium</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart11')">Add to Cart</button>
+
+    </div>
+
+    <div class="card " id="cart12">
+        <img src="./asset/t5.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Red</h3>
+            <h3>Price: <span class="price">700<span></h3>
+            <h3 class="size">Size: 2Ex Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart12')">Add to Cart</button>
+
+    </div>
+
+    
+    <div class="card" id="cart13">
+        <img src="./asset/t2.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Yellow</h3>
+            <h3>Price: <span class="price">600<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart13')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart14">
+        <img src="./asset/t3.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Blue</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart14')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart15">
+        <img src="./asset/t4.jpg" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Black</h3>
+            <h3>Price: <span class="price">100<span>0</h3>
+            <h3 class="size">Size: 2Ex Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart15')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart16">
+        <img src="./asset/t2.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Yellow</h3>
+            <h3>Price: <span class="price">700<span></h3>
+            <h3 class="size">Size: Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart16')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart17">
+        <img src="./asset/t3.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Blue</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart17')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="cart18">
+        <img src="./asset/t4.jpg" alt="img">
+        <div class="card-flex" >
+            <h3 class="colo">Color: Black</h3>
+            <h3>Price: <span class="price">500<span></h3>
+            <h3 class="size">Size: Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart18')">Add to Cart</button>
+
+    </div>
+
+
+    <div class="card" id="cart19">
+        <img src="./asset/t4.jpg" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Black</h3>
+            <h3>Price: <span class="price">700<span></h3>
+            <h3 class="size">Size: Large</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('cart19')">Add to Cart</button>
+
+    </div>
+
+    <div class="card" id="card20">
+        <img src="./asset/t2.png" alt="img">
+        <div class="card-flex">
+            <h3 class="colo">Color: Yellow</h3>
+            <h3>Price: <span class="price">600<span></h3>
+            <h3 class="size">Size: Small</h3>
+        </div>
+        <button class="card-button" onclick="cartCounter(); addToCart('card20')">Add to Cart</button>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+<script src="./script.js"></script>
+
+
+
+</body>
+</html>

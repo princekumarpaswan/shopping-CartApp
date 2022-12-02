@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 class="cart-head">Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+    </header>
+     
+
+    <div class="order">
+
+        <h1>Order Summary</h1>
+
+
+        <div class="inner">
+
+     
+        <div>
+            <h2 class="cart-items">ITEMS - <span class="items " id="itm">0</span> </h2>
+            <h2 class="cart-items">Total cost - <span class="items" id="itmP" >0</span> </h2>
+        </div>
+
+        <div class="promo">
+            <h2>Promo code</h2>
+            <input type="text" id="coupen">
+            <button onclick="discount()">Apply</button>
+
+        </div>
+
+        <div class="ship">
+            <h2>Shipping Adress</h2>
+            <input type="text" id="adress">
+        </div>
+
+        <div>
+            <button class="out" onclick="display()">CheckOut</button>
+        </div>
+       
+    </div>
+
+  
+
+
+
+</div>
+
+<div class="tag" id="ppp">
+
+    <ul>
+     <li>Product Detail</li>
+     <li>Quantity</li>
+     <li>Price</li>
+     <li>Total</li>
+    </ul>
+     
+
+
+   
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+<script src="./script2.js"></script>
+
+</body>
+</html>
