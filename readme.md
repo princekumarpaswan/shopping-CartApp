@@ -2,7 +2,7 @@
 
 By Prince Kr Paswan
 
-## [Link to the Shopping-Cart-App](https://shade-up-prince.netlify.app/)
+## [Link to the Shopping-Cart-App](https://shoppingchart.netlify.app/)
 
 
 ![Completed Website](./s1.png)
